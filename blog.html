@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="bg-[#fcf4e9] sticky top-0">
+        <!-- Nav bar -->
+        <nav class="max-w-[1140px] w-11/12 mx-auto flex justify-between py-6">
+            <a class="btn bg-[#B4F461] text-black text-xl font-semibold hover:text-[#B4F461] px-8 border-none"
+                href="index.html">Home</a>
+            <div class="flex items-center gap-4">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-xl font-semibold text-black">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="./assets/coin.png" alt="">
+                <h1 class="text-xl font-medium text-[#111111B3]"><span id="my-initial-coins">5500</span> BDT</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dark:bg-gray-100 dark:text-gray-800">
+            <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8 ">
+                <h2 class="text-2xl font-semibold sm:text-4xl mt-4 mb-8">Frequently Asked Questions <i class="fa-regular fa-circle-question"></i></h2>
+                <div class="space-y-4">
+                    <details class="w-full border rounded-lg">
+                        <summary class="px-4 py-6 focus:outline-none focus-visible:dark:ring-default-600">What is Document Object Model (DOM)?</summary>
+                        <p class="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-600">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, allowing developers to manipulate content, structure, and style using JavaScript.</p>
+                    </details>
+                    <details class="w-full border rounded-lg">
+                        <summary class="px-4 py-6 focus:outline-none focus-visible:dark:ring-default-600">How do you select an element from the DOM?</summary>
+                        <p class="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-600">
+                            To select an element from the DOM, you can use the following JavaScript methods: <br>
+                            <br>
+                            getElementById(id) – Selects an element by its ID. <br>
+                            getElementsByClassName(className) – Selects elements by their class name. <br>
+                            querySelector(selector) – Selects the first element that matches a CSS selector. <br>
+                            querySelectorAll(selector) – Selects all elements that match a CSS selector.</p>
+                    </details>
+                    <details class="w-full border rounded-lg">
+                        <summary class="px-4 py-6 focus:outline-none focus-visible:dark:ring-default-600">How do you manipulate an element's attribute and style using DOM?</summary>
+                        <p class="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-600">To manipulate an element's attribute, you can use methods like setAttribute to change the value of an attribute, getAttribute to retrieve its value, and removeAttribute to remove an attribute.
+
+                            To manipulate an element's style, you can use the style property to directly modify inline CSS, such as changing colors, sizes, or other styles.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
