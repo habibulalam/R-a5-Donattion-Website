@@ -99,7 +99,9 @@ function donationCalculation(coinID, inputID, title) {
 
 
 
-
+    // Show the modal at the end
+    const modal = document.getElementById("my_modal_1");
+    modal.showModal();  // This will show the modal
 
 
 
