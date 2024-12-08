@@ -1,4 +1,4 @@
-// Button functions
+//Donation and history Button functions
 
 const donateBtn = document.getElementById("donate-btn");
 const historyBtn = document.getElementById("history-btn");
@@ -17,3 +17,42 @@ historyBtn.addEventListener("click" , function(){
 
     donateBtn.classList = nonActiveButton;
 })
+
+
+
+
+// Donation calculations function
+
+
+function donationCalculation ( coinID , inputID){
+    const myTotalAmount = parseInt(document.getElementById("my-initial-coins").innerText)
+    const coin = parseInt(document.getElementById(coinID).innerText);
+    const inputAmount = document.getElementById(inputID).value;
+
+    console.log(coin , inputAmount);
+
+    const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    // Validating input field (only take positive number)
+    for(const char of inputAmount){
+        if(!numbers.includes(char)){
+            alert('Please enter a valid "Positive Number"')
+            return
+        }
+    }
+    // End validation check
+
+    // Convert string to Int (Input Amount)
+    const imputedAmountNumber = parseInt(inputAmount);
+
+    
+    // adding To total donation coin
+    const latestCoin = coin + imputedAmountNumber;
+    document.getElementById(coinID).innerText = latestCoin;
+
+    // Reducing from my total amount
+    const myNewAmount = myTotalAmount - imputedAmountNumber;
+    document.getElementById("my-initial-coins").innerText = myNewAmount;
+
+    // Clearing input field
+    document.getElementById(inputID).value = '';
+}
