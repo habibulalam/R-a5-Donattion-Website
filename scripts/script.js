@@ -43,6 +43,10 @@ function donationCalculation(coinID, inputID, title) {
 
     const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     // Validating input field (only take positive number)
+    if(!inputAmount){
+        alert('Please enter a valid "Positive Number"')
+        return
+    }
     for (const char of inputAmount) {
         if (!numbers.includes(char)) {
             alert('Please enter a valid "Positive Number"')
